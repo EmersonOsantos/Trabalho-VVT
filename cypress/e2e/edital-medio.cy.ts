@@ -10,7 +10,7 @@ describe('Sistema Integrado de Gestão para Fundações de Amparo a Pesquisas', 
       'Grupo12@sig', // [Senha do usuário]
     ); //Acessa a página de login usando as credenciais do usuário e senha.
   });
-  it.only('Realiza login no sistema e cria um edital simples', () => { //Teste edital simples, se houver mais de um teste, o it.only executa apenas esse teste.
+  it.only('Realiza login no sistema e cria um edital medio', () => { //Teste edital medio, se houver mais de um teste, o it.only executa apenas esse teste.
     cy.get('[data-cy="nav-group-edital"]').click(); //Clica na aba Editais
     cy.get('[data-cy="nav-item-publicar-edital"]').click(); //Clica na opção Editais para acessar da página de Editais
     cy.get('[data-cy="add-publicar-edital"]').click(); //Clica no botão "Adicionar" para criação de um novo Edital
