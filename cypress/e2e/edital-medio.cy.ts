@@ -51,6 +51,26 @@ describe('Sistema Integrado de Gestão para Fundações de Amparo a Pesquisas', 
     cy.get('[data-cy="programa"]').click(); //Clica em Programa para seguir para a página de Programa
     cy.get('[data-cy="programaId"]').click(); //Clica no campo de seleção de Programa
     cy.get('[data-cy-index="programaId-item-0"]').click(); //Seleciona o primeiro Programa da lista de Programas
+   
+    cy.get('[data-cy="perguntas"]').click(); //Clica na aba Perguntas para seguir para a página de Perguntas
+    cy.get('[data-cy="indicadores-de-producao"]').click(); //Clica na aba Indicadores de Produção para seguir para a página de Indicadores de Produção
+    
+    cy.get('[data-cy="add-button"]').click(); //Clica no botão "Adicionar" para criar um novo Indicador de Produção
+    cy.get('[data-testid="ArrowDropDownIcon"]').click(); //Clica no campo de seleção de Indicador de Produção
+    cy.get('[data-cy="indicador-de-pro"]').click(); //Seleciona o Indicador de Produção "Número de artigos publicados em periódicos indexados"
+    cy.get('[data-cy="indicadorProducao-confirmar"]').click(); //Clica no botão "Salvar" para salvar as informações do Indicador de Produção
+    
+    cy.get('[data-cy="add-button"]').click(); //Clica no botão "Adicionar" para criar um novo Indicador de Produção
+    cy.get('[data-testid="ArrowDropDownIcon"]').click(); //Clica no campo de seleção de Indicador de Produção
+    cy.get('[data-cy="producao-bibliog"]').click(); //Seleciona o Indicador de Produção "Produção Bibliográfica"
+    cy.get('[data-cy="indicadorProducao-confirmar"]').click(); //Clica no botão "Salvar" para salvar as informações do Indicador de Produção
+    
+    cy.get('[data-cy="add-button"]').click(); //Clica no botão "Adicionar" para criar um novo Indicador de Produção
+    cy.get('[data-testid="ArrowDropDownIcon"]').click(); //Clica no campo de seleção de Indicador de Produção
+    cy.get('[data-cy="producao-tecnica"]').click(); //Seleciona o Indicador de Produção "Produção Técnica"
+    cy.get('[data-cy="indicadorProducao-confirmar"]').click(); //Clica no botão "Salvar" para salvar as informações do Indicador de Produção
+    
+
     cy.get('[data-cy="menu-salvar"]').click(); //Clica no botão "Salvar" para salvar as informações do Edital
     cy.get('[data-cy="menu-finalizar"]').click(); //Clica no botão "Finalizar" para salvar e sair da área de adição do Edital
 
