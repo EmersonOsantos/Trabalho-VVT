@@ -255,21 +255,22 @@ describe('Sistema Integrado de Gestão para Fundações de Amparo a Pesquisas', 
     cy.get(':nth-child(3) > .MuiGrid-grid-xs-10 > .css-v3z1wi > .array-item-container > .MuiGrid-container > :nth-child(1) > .custom-input-container > .MuiAutocomplete-root > .MuiFormControl-root > .MuiInputBase-root > .MuiAutocomplete-endAdornment > .MuiButtonBase-root > [data-testid="ArrowDropDownIcon"]').click(); //Clica no campo de seleção de Documento Pessoal
     cy.get('[data-cy="titulo-de-eleito"]').click(); //Seleciona a opção "Título de Eleitor" no campo de seleção de Documento Pessoal
     cy.get('[data-cy="documentoPessoalEdital.2.obrigatorio"]').click(); //Marca a opção "Obrigatório" do Documento Pessoal
- /*   
+    
     cy.get('[data-cy="documentoPessoalEdital-adicionar"]').click(); //Clica no botão "Adicionar" para criar um novo Documento Pessoal
     cy.get(':nth-child(4) > .MuiGrid-grid-xs-10 > .css-v3z1wi > .array-item-container > .MuiGrid-container > :nth-child(1) > .custom-input-container > .MuiAutocomplete-root > .MuiFormControl-root > .MuiInputBase-root > .MuiAutocomplete-endAdornment > .MuiButtonBase-root > [data-testid="ArrowDropDownIcon"]').click(); //Clica no campo de seleção de Documento Pessoal
-    cy.get('#mui-202-option-1').click(); //Seleciona a opção "Certidão de Nascimento" no campo de seleção de Documento Pessoal
-*/
+     cy.get('[data-cy="comprovante-de-r"]').click(); //Seleciona a opção "Comprovante de Residência" no campo de seleção de Documento Pessoal
+/*
     cy.get('[data-cy="documentoPessoalEdital-adicionar"]').click(); //Clica no botão "Adicionar" para criar um novo Documento Pessoal
     cy.get(':nth-child(5) > .MuiGrid-grid-xs-10 > .css-v3z1wi > .array-item-container > .MuiGrid-container > :nth-child(1) > .custom-input-container > .MuiAutocomplete-root > .MuiFormControl-root > .MuiInputBase-root > .MuiAutocomplete-endAdornment > .MuiButtonBase-root > [data-testid="ArrowDropDownIcon"]').click(); //Clica no campo de seleção de Documento Pessoal
     cy.get('[data-cy="comprovante-de-r"]').click(); //Seleciona a opção "Comprovante de Residência" no campo de seleção de Documento Pessoal
     cy.get('[data-cy="documentoPessoalEdital.4.obrigatorio"]').click(); //Marca a opção "Obrigatório" do Documento Pessoal
-    
+ */   
 
     //Fim de Documentos 
   
    
    
+
     //Perguntas
 
     cy.get('[data-cy="perguntas"]').click(); //Clica na aba Perguntas para seguir para a página de Perguntas
