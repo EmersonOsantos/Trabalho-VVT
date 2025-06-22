@@ -34,19 +34,19 @@ describe('Criação de Edital Médio - Grupo 12', () => {
     cy.contains('Próximo').click();
 
     // Texto do Termo
-    cy.get('[data-cy="termoDeAceite"]')
-      .click()
-      .realType('Termo de Aceite Grupo-12 E.M. 001/2025 Eduã-Emerson', { delay: 0 },);
-
+    cy.get('[data-cy="termoDeAceite"]').then(el => {
+      const editor = (el[0] as any).ckeditorInstance; 
+      editor.setData('Termo de Aceite Grupo-12 E.M. 001/2025 Eduã - Emerson');
+    });
     // próxima seção
     cy.contains('Próximo').click();
     
     
     // Texto do Edital
-    cy.get('[data-cy="texto"]')
-      .click()
-      .realType('Texto do Edital Grupo-12 E.M. 001/2025 Eduã-Emerson', { delay: 0 },);
-
+    cy.get('[data-cy="texto"]').then(el => {
+      const editor = (el[0] as any).ckeditorInstance; 
+      editor.setData('Texto do Edital Grupo-12 E.M. 012/2025 Eduã - Emerson');
+    });
     // próxima seção
     cy.contains('Próximo').click();
 
